@@ -81,6 +81,7 @@ ll modFact(ll n, ll p){ if (n >= p) return 0; ll result = 1; for (ll i = 1; i <=
 3. binary_search(arr.begin(), arr.end(), val) works on sorted array nd returns bool value
 4. lower_bound(arr.begin(), arr.end(), val)-arr.begin() works on sorted nd returns index as soon as val is found else next higher index
 5. upper_bound(arr.begin(), arr.end(), 20)-arr.begin() works on sorted nd returns index of next higher element from right 
+6. ll number_value = stoi(binary_string, 0, 2); 
 #endif
 
 /*******************************************/
