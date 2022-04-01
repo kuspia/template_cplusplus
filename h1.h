@@ -79,8 +79,8 @@ ll modFact(ll n, ll p){ if (n >= p) return 0; ll result = 1; for (ll i = 1; i <=
 1. string w = s.substr(l,r-l+1) it follows 0 Indexing and note here l and r {both inculsive} are indexes of slicing
 2. v.erase(v.begin()+l,(v.begin()+1)+r) 0 Indexing and note here l and r {both inculsive} are indexes of slicing
 3. binary_search(arr.begin(), arr.end(), val) works on sorted array nd returns bool value
-4. lower_bound(arr.begin(), arr.end(), val)-arr.begin() works on sorted nd returns index as soon as val is found else next higher index
-5. upper_bound(arr.begin(), arr.end(), 20)-arr.begin() works on sorted nd returns index of next higher element from right 
+4. lower_bound(arr.begin(), arr.end(), val) works on sorted nd returns index as soon as val is found else next higher index
+5. upper_bound(arr.begin(), arr.end(), val) works on sorted nd returns index of next higher element from right 
 6. ll number_value = stoi(binary_string, 0, 2); 
 #endif
 
