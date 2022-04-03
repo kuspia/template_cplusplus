@@ -17,12 +17,12 @@ using namespace std;
 #define maa LLONG_MAX
 #define mii LLONG_MIN
 #define iofast ios_base::sync_with_stdio(false);cin.tie(NULL);
-#define kussup int main()
-#define kuspia2 kussup {iofast;lll{ 
-#define kuspia1 kussup {iofast; 
-// Debugger Usage:: debug(code + "forces",-aux / 10 * 2.3); debug(x, y, z, s, b); 
-#define debug(...) debug_out(vec_splitter(#__VA_ARGS__), 0, __LINE__, __VA_ARGS__);
-vector<string> vec_splitter(string s) {	s += ','; vector<string> res; while(!s.empty()) { res.push_back(s.substr(0, s.find(','))); s = s.substr(s.find(',') + 1);}return res;} void debug_out(vector<string> __attribute__ ((unused)) args,__attribute__ ((unused)) int idx, __attribute__ ((unused)) int LINE_NUM) { cerr << endl; } template <typename Head, typename... Tail> void debug_out(vector<string> args, int idx, int LINE_NUM, Head H, Tail... T) {if(idx > 0) cerr << ", "; else cerr << "Line(" << LINE_NUM << ") ";stringstream ss; ss << H;cerr << args[idx] << " = " << ss.str();debug_out(args, idx + 1, LINE_NUM, T...);}
+#define _s void solve(){
+#define _2 }int main(){iofast lll{solve();}}
+#define _1 }int main(){iofast solve();}
+// Debugger Usage:: db(code + "forces",-aux / 10 * 2.3); db(x, y, z, s, b); 
+#define db(...) db_out(vec_splitter(#__VA_ARGS__), 0, __LINE__, __VA_ARGS__);
+vector<string> vec_splitter(string s) {	s += ','; vector<string> res; while(!s.empty()) { res.push_back(s.substr(0, s.find(','))); s = s.substr(s.find(',') + 1);}return res;} void db_out(vector<string> __attribute__ ((unused)) args,__attribute__ ((unused)) int idx, __attribute__ ((unused)) int LINE_NUM) { cerr << endl; } template <typename Head, typename... Tail> void db_out(vector<string> args, int idx, int LINE_NUM, Head H, Tail... T) {if(idx > 0) cerr << ", "; else cerr << "Line(" << LINE_NUM << ") ";stringstream ss; ss << H;cerr << args[idx] << " = " << ss.str();db_out(args, idx + 1, LINE_NUM, T...);}
 #define pr(...) pr_out(vec_splitter(#__VA_ARGS__), 0, __LINE__, __VA_ARGS__);
 #define iofile freopen("input.txt", "r", stdin);freopen("output.txt", "w", stdout);
 #define s___ auto t_____rt = chrono::high_resolution_clock::now();
@@ -49,8 +49,8 @@ vector<string> vec_splitter(string s) {	s += ','; vector<string> res; while(!s.e
 #define max3(a,b,c) max(a,max(b,c))
 #define min3(a,b,c) min(a,min(b,c))
 void pr_out(vector<string> __attribute__ ((unused)) args,__attribute__ ((unused)) int idx, __attribute__ ((unused)) int LINE_NUM) { cout << endl; } template <typename Head, typename... Tail>void pr_out(vector<string> args, int idx, int LINE_NUM, Head H, Tail... T) {stringstream ss; ss << H;cout << ss.str() << " ";pr_out(args, idx + 1, LINE_NUM, T...);}
-#define shw(v,n) l1(i,0,n) cout<<v[i]<<" " ; cout lc ;
-#define dshw(v,n) cerr<<"Line("<<__LINE__<<") "; l1(i,0,n) cerr<<v[i]<<" " ; cerr lc ;
+#define sw(v,n) l1(i,0,n) cout<<v[i]<<" " ; cout lc ;
+#define dsw(v,n) cerr<<"Line("<<__LINE__<<") "; l1(i,0,n) cerr<<v[i]<<" " ; cerr lc ;
 
 // Note l and r are inclusive
 mt19937 r__ng(chrono::steady_clock::now().time_since_epoch().count());ll randll(ll l, ll r){uniform_int_distribution<int> uid(l, r);ok uid(r__ng);}
