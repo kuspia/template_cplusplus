@@ -20,9 +20,9 @@ using namespace std;
 #define _s void solve(){
 #define _2 }int main(){iofast lll{solve();}}
 #define _1 }int main(){iofast solve();}
-// Debugger Usage:: db(code + "forces",-aux / 10 * 2.3); db(x, y, z, s, b); 
-#define db(...) db_out(vec_splitter(#__VA_ARGS__), 0, __LINE__, __VA_ARGS__);
-vector<string> vec_splitter(string s) {	s += ','; vector<string> res; while(!s.empty()) { res.push_back(s.substr(0, s.find(','))); s = s.substr(s.find(',') + 1);}return res;} void db_out(vector<string> __attribute__ ((unused)) args,__attribute__ ((unused)) int idx, __attribute__ ((unused)) int LINE_NUM) { cerr << endl; } template <typename Head, typename... Tail> void db_out(vector<string> args, int idx, int LINE_NUM, Head H, Tail... T) {if(idx > 0) cerr << ", "; else cerr << "Line(" << LINE_NUM << ") ";stringstream ss; ss << H;cerr << args[idx] << " = " << ss.str();db_out(args, idx + 1, LINE_NUM, T...);}
+// Debugger Usage:: dg(code + "forces",-aux / 10 * 2.3); dg(x, y, z, s, b); 
+#define dg(...) dg_out(vec_splitter(#__VA_ARGS__), 0, __LINE__, __VA_ARGS__);
+vector<string> vec_splitter(string s) {	s += ','; vector<string> res; while(!s.empty()) { res.push_back(s.substr(0, s.find(','))); s = s.substr(s.find(',') + 1);}return res;} void dg_out(vector<string> __attribute__ ((unused)) args,__attribute__ ((unused)) int idx, __attribute__ ((unused)) int LINE_NUM) { cerr << endl; } template <typename Head, typename... Tail> void dg_out(vector<string> args, int idx, int LINE_NUM, Head H, Tail... T) {if(idx > 0) cerr << ", "; else cerr << "Line(" << LINE_NUM << ") ";stringstream ss; ss << H;cerr << args[idx] << " = " << ss.str();dg_out(args, idx + 1, LINE_NUM, T...);}
 #define pr(...) pr_out(vec_splitter(#__VA_ARGS__), 0, __LINE__, __VA_ARGS__);
 #define iofile freopen("input.txt", "r", stdin);freopen("output.txt", "w", stdout);
 #define s___ auto t_____rt = chrono::high_resolution_clock::now();
